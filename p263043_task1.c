@@ -1,8 +1,15 @@
 #include <stdio.h>
 int main() {
-float distance,time;
-printf("Enter the distance in km ");scanf("%f",&distance);printf("\n");
-printf("Enter the time in secconds ");scanf("%f",&time);printf("\n");
-float avg_speed=distance/time;
-printf("Distance:%.2fkm\nTime:%.2fseconds\nAveragespeed:%.2f",distance,time,avg_speed);
+int ball,runs,boundries,dots,total;
+total=0;
+boundries=0;
+dots=0;
+for(ball=1;ball<=6;ball++) {
+printf("Ball %d runs: ",ball);scanf("%d",&runs); printf("\n");
+total=total+runs;
+if(runs==4 ||runs==6)
+boundries=boundries+1;
+else if(runs==0)
+dots=dots+1;}
+printf("Total runs: %d\nBoundries: %d\nDot balls=%d",total,boundries,dots);
 return 0;}

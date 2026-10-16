@@ -1,12 +1,20 @@
 #include <stdio.h>
 int main() {
+int i=3,pin,a;
+do {
+printf("Enter pin ");scanf("%d",&pin);printf("\n");
 
-float salary,tax_rate,tax_ammount,net_salary;
-char x='%';
-char y='$';
-printf("Enter salary  ");scanf("%f",&salary);printf("\n");
-printf("Enter tax rate in percentage ");scanf("%f",&tax_rate);printf("\n");
-tax_ammount=salary*tax_rate/100;
-net_salary=salary-tax_ammount;
-printf("salary: %.2f%c\nTax rate: %.2f%c\nTax ammount: %.2f%c\nNet salary: %.2f%c",salary,x,tax_rate,y,tax_ammount,y,net_salary,y);
+if(pin==4321) {
+printf("access granted");
+break;
+}
+else {
+i--;
+a=1;
+printf(" Wrong PIN. %d attempts remaining\n",i);
+
+}
+ }while(i>=a);
+if(pin!=4321)
+printf("Card blocked. Please contact your bank.");
 return 0;}

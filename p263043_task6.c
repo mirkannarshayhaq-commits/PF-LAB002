@@ -1,11 +1,10 @@
 #include <stdio.h>
 int main() {
-
-int x,y;
-printf("Enter value of x  ");scanf("%d",&x);printf("\n");
-printf("Enter the value of b  ");scanf("%d",&y);printf("\n");
-float a=x/y;
-float b=(float) x/y;
-float c=(float) (x/y);
-printf("a:%f\nb:%f\nc:%f",a,b,c);
+int w;
+int y =w/2;
+printf("Enter the  the Weight in kg ");scanf("%d",&w);printf("\n");
+if(w>2 && y==0)
+printf("Yes");
+else 
+printf("No");
 return 0;}
